@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   float a,b;
+   char oper;
+  
+  cout<<("enter the values of a = ");
+  cin>>a;
+
+  cout<<("enter the operation [+,-,*,/]");
+  cin>>oper;
+
+  cout<<("enter the values of b = ");
+  cin>>b;
+
+  switch(oper)
+  {
+    case'+': 
+            cout<<"result ="<<a+b;
+            break;
+
+    case'-': cout<<"result ="<<a-b;
+            break;        
+            
+    case'*': cout<<"result ="<<a*b;
+            break;
+
+    case'/': cout<<"result ="<<a/b;
+           break;        
+
+    default:
+            cout<<"invalid option";
+            }
+  }
